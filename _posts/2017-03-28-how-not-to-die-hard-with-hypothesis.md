@@ -206,3 +206,5 @@ of this post._
 
 [Julia]: http://jvns.ca/
 [Dan]: https://danluu.com/
+
+_Read the discussion about this post [on Lobsters](https://lobste.rs/s/alz5mw/solving_water_jug_problem_from_die_hard_3)._
