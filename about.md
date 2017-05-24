@@ -4,4 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Howdy. I'm Nicholas Chammas. I don't have anything to say here yet.
+Howdy. I'm Nicholas Chammas.
+
+Please note: There are many people in the world who share my name, and
+a few who also use the `nchammas` handle online. Don't confuse them
+for me. I don't use Twitter, for example.
