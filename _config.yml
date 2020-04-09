@@ -31,3 +31,9 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
