@@ -45,7 +45,7 @@ Examples of transactional databases include all the popular database systems you
 <figure>
     <a href="http://www.warfaremagazine.co.uk/articles/1415-The-Battle-of-Agincourt/171">
         <img
-            src="/assets/images/battle-of-agincourt.jpg"
+            src="/assets/images/battle-of-agincourt-compressed.jpg"
             width="300"
         />
     </a>
@@ -77,7 +77,7 @@ Popular analytical database systems include:
 <figure>
     <a href="https://en.wikipedia.org/wiki/Trebuchet">
         <img
-            src="/assets/images/trebuchet-castelnaud.jpg"
+            src="/assets/images/trebuchet-castelnaud-compressed.jpg"
             width="400"
         />
     </a>
