@@ -10,7 +10,7 @@ Many years ago, working as a database developer at a video game company, I was t
 
 [simple banking database]: https://dba.stackexchange.com/q/5608/2660
 
-Working on that problem gave me a hands-on introduction to several recurring themes in software engineering. One of those themes is the divide between between two ways of thinking about data: thinking about the **state** of something, and thinking about the **transition** of something from one state to another.
+Working on that problem gave me a hands-on introduction to several recurring themes in software engineering. One of those themes is the divide between two ways of thinking about data: thinking about the **state** of something, and thinking about the **transition** of something from one state to another.
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <div style="text-align: center; margin-right: 20px;">
