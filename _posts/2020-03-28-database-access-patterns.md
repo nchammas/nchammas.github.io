@@ -119,6 +119,8 @@ There are many more ways to understand and categorize database systems:
 
 In this post we've focused just on access patterns, though databases designed for different access patterns typically do so by differing on these other axes, too.
 
-What about systems like Amazon Athena and Spark SQL, by the way? Many teams with data-intensive workflows tend to use these tools as well. And they certainly _look_ like databases, though there's something weird about them. Roughly speaking, systems like Athena and Spark SQL _can_ be categorized as analytical databases, but there's more to them than that. We'll explore these systems in more detail in a follow-up post.
+What about systems like Amazon Athena and Spark SQL, by the way? Many teams with data-intensive workflows tend to use these tools as well. And they certainly _look_ like databases, though there's something weird about them. Roughly speaking, systems like Athena and Spark SQL _can_ be categorized as analytical databases, but there's more to them than that. We'll explore these systems in more detail in a [follow-up post].
+
+[follow-up post]: {% link _posts/2020-05-10-modern-data-lake-database.md %}
 
 _Thanks to Michelle, Yuna, Sam, Cip, Fabian, and Roland for reading drafts of this post._
