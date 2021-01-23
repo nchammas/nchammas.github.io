@@ -122,7 +122,7 @@ To update a materialized view, there are two high-level properties you typically
 
 ### Update Trigger
 
-The update trigger is the event that prompts a refresh of the materialized view---i.e. by running your pipeline against the latest source data.
+The update trigger is the event that prompts a refresh of the materialized view---e.g. by running your pipeline against the latest source data.
 
 That event may be a file landing in a shared drive, or some data arriving on an event stream, or another pipeline completing. For some pipelines, the update trigger may just be a certain time of day, in which case it might be more useful to talk about the update _frequency_ rather than trigger.
 
