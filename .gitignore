@@ -3,3 +3,7 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .ruby-version
+*.pxd/
+*.key
+*.numbers
+_drafts/
