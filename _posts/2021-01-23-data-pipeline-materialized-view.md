@@ -119,7 +119,7 @@ Materializing the output, though a practical necessity for most pipelines, adds 
 </figure>
 </div>
 
-To update a materialized view, there are two high-level properties you typically care about: the update _trigger_, and the update _granularity_.
+To update a materialized view, there are two high-level properties you typically care about: the update _trigger_, and the update _granularity_. The former affects the freshness of your output, which impacts end-users of the data, and the latter affects the performance of your update process, which impacts the engineers or operators responsible for that process.
 
 ### Update Trigger
 
