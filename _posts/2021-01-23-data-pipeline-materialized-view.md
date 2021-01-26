@@ -114,6 +114,7 @@ Materializing the output, though a practical necessity for most pipelines, adds 
         />
     </span>
     <figcaption>
+    The sales total of 101 for Eric Carle is stale. The correct value is now 103.
     </figcaption>
 </figure>
 </div>
