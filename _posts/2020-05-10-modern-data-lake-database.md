@@ -108,6 +108,8 @@ We can extend this experience to the cloud. If you work with Spark on Amazon EMR
 
 I hope this post connected some dots for you about the various distributed data systems out there. There are many ways to conceptualize a data lake. Thinking of it as a database -- i.e. a combination of catalog, query engine, and storage layer -- provides a familiar abstraction that will help you mentally map out many of the technologies in this space.
 
-This idea is more powerful than just as a conceptual tool, though! After all, a team may use these same technologies to build a data lake without integrating them to create that cohesive "database" package. What are they missing out on? As we touched on earlier, by actually building your data lake around the database abstraction, you can can shift the focus of your work away from _where_ the data is or _how_ to manipulate it, and instead focus on _what_ data you want. Let's explore this idea in a future post.
+This idea is more powerful than just as a conceptual tool, though! After all, a team may use these same technologies to build a data lake without integrating them to create that cohesive "database" package. What are they missing out on? As we touched on earlier, by actually building your data lake around the database abstraction, you can can shift the focus of your work away from _where_ the data is or _how_ to manipulate it, and instead focus on _what_ data you want. Let's explore this idea in a [future post].
+
+[future post]: {% link _posts/2021-01-23-data-pipeline-materialized-view.md %}
 
 _Thanks to Michelle, Yuna, Cip, and Sophie for reading drafts of this post._
