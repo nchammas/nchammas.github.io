@@ -215,3 +215,5 @@ Get clear on what data is primary and what is derivative. Map your pipeline to t
 
 The exercise should help bring some conceptual order to even the messiest pipelines.
 
+_Read the discussion about this post [on Hacker News](https://news.ycombinator.com/item?id=26217911)._
+
