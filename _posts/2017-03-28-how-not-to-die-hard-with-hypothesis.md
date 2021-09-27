@@ -5,24 +5,20 @@ permalink: /writing/:title
 tags: [python, property-based testing, hypothesis, tla]
 ---
 
-In the movie [Die Hard with a Vengeance](https://en.wikipedia.org/wiki/Die_Hard_with_a_Vengeance)
-(aka Die Hard 3), there is
-[this famous scene](https://www.youtube.com/watch?v=6cAbgAaEOVE) where
-John McClane (Bruce Willis) and Zeus Carver (Samuel L. Jackson)
-are forced to solve a problem or be blown up: Given a 3 gallon jug and
-5 gallon jug, how do you measure out exactly 4 gallons of water?
+In the movie [Die Hard with a Vengeance](https://en.wikipedia.org/wiki/Die_Hard_with_a_Vengeance) (aka Die Hard 3), there is a famous scene where John McClane (Bruce Willis) and Zeus Carver (Samuel L. Jackson) are forced to solve a problem or be blown up: Given a 3 gallon jug and 5 gallon jug, how do you measure out exactly 4 gallons of water?
 
 <div style="text-align: center;">
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/6cAbgAaEOVE?rel=0"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
-<p>
-(The video title is wrong. It's Die Hard 3.)
-</p>
+<figure>
+    <span>
+        <img
+            src="/assets/images/die-hard/die-hard-water-jugs.jpg"
+            width="500"
+        />
+    </span>
+    <figcaption>
+    McClane and Carver puzzle over the water jug problem.
+    </figcaption>
+</figure>
 </div>
 
 Apparently, you can solve this problem using a formal specification
