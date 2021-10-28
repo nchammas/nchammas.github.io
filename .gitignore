@@ -7,3 +7,4 @@ _site
 *.key
 *.numbers
 _drafts/
+.vscode/
