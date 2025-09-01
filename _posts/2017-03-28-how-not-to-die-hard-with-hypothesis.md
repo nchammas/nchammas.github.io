@@ -60,6 +60,9 @@ from hypothesis import note, settings
 from hypothesis.stateful import RuleBasedStateMachine, rule, invariant
 
 
+# The default for `max_examples` is sometimes not enough for Hypothesis
+# to find a falsifying example.
+@settings(max_examples=2000)
 class DieHardProblem(RuleBasedStateMachine):
     small = 0
     big = 0
@@ -103,10 +106,7 @@ class DieHardProblem(RuleBasedStateMachine):
         assert self.big != 4
 
 
-# The default of 200 is sometimes not enough for Hypothesis to find
-# a falsifying example.
-with settings(max_examples=2000):
-    DieHardTest = DieHardProblem.TestCase
+DieHardTest = DieHardProblem.TestCase
 ```
 
 Calling `pytest` on this file quickly digs up a solution:
@@ -138,6 +138,8 @@ Step #6: pour_big_into_small()
 > small: 3 big: 4
 ====================== 1 failed in 0.22 seconds ======================
 ```
+
+_Note: I last tested this against Python 3.13, pytest 8.4, and Hypothesis 6.138._
 
 ## What's Going on Here
 
