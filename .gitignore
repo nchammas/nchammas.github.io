@@ -8,3 +8,6 @@ _site
 *.numbers
 _drafts/
 .vscode/
+.venv/
+.hypothesis/
+__pycache__/
