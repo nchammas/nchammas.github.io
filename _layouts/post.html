@@ -115,13 +115,12 @@ layout: default
       The inner div is position:sticky (follows the viewport as you scroll).
       Both are needed: sticky requires a tall enough scroll container to work.
     -->
-    <!-- GitHub Pages doesn't support jekyll-toc. -->
-    <!-- <aside class="post-toc">
+    <aside class="post-toc">
       <div class="post-toc-inner">
         <div class="toc-heading">On this page</div>
         {{ content | toc_only }}
       </div>
-    </aside> -->
+    </aside>
   </div>
 
   {%- if site.disqus.shortname -%}
