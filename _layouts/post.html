@@ -1,6 +1,95 @@
 ---
 layout: default
 ---
+<style>
+  .post-with-toc {
+    position: relative;
+  }
+
+  .post-toc {
+    display: none;
+  }
+
+  /* Only show TOC when there's enough viewport width beyond the wrapper */
+  @media (min-width: 1080px) {
+    .post-toc {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 220px;
+      margin-left: 2rem;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .post-toc-inner {
+      position: sticky;
+      top: 1.5rem;
+      font-size: 0.85em;
+      line-height: 1.5;
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+      pointer-events: auto;
+    }
+  }
+
+  .post-toc .toc-heading {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+  }
+
+  .post-toc .section-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-toc .section-nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 2ch;
+  }
+
+  .post-toc .section-nav li {
+    margin: 0.4em 0;
+  }
+
+  /* Make injected heading anchors visible without requiring Octicon fonts. */
+  .post-content h1 .anchor,
+  .post-content h2 .anchor,
+  .post-content h3 .anchor,
+  .post-content h4 .anchor,
+  .post-content h5 .anchor,
+  .post-content h6 .anchor {
+    float: left;
+    margin-left: -1.1em;
+    padding-right: 0.25em;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 120ms ease-in;
+  }
+
+  .post-content h1:hover .anchor,
+  .post-content h2:hover .anchor,
+  .post-content h3:hover .anchor,
+  .post-content h4:hover .anchor,
+  .post-content h5:hover .anchor,
+  .post-content h6:hover .anchor,
+  .post-content .anchor:focus {
+    opacity: 1;
+  }
+
+  .post-content .anchor .octicon-link::before {
+    content: "#";
+    font-weight: 600;
+  }
+</style>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -12,11 +101,26 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content | toc }}
+  <div class="post-with-toc">
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content | inject_anchors }}
+    </div>
+
+    <!--
+      The outer aside is position:absolute (anchors to full post height).
+      The inner div is position:sticky (follows the viewport as you scroll).
+      Both are needed: sticky requires a tall enough scroll container to work.
+    -->
+    <aside class="post-toc">
+      <div class="post-toc-inner">
+        <div class="toc-heading">On this page</div>
+        {{ content | toc_only }}
+      </div>
+    </aside>
   </div>
 
   {%- if site.disqus.shortname -%}
