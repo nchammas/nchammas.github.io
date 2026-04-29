@@ -2,7 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
-*.pxd/
+*.pxd
 *.key
 *.numbers
 _drafts/
@@ -10,3 +10,4 @@ _drafts/
 .venv/
 .hypothesis/
 __pycache__/
+.lycheecache

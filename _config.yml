@@ -27,10 +27,6 @@ defaults:
       type: posts
     values:
       toc: true
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
 # Quiet Dart Sass warnings due to Minima.
 # See:
 #   - https://github.com/jekyll/minima/issues/709#issuecomment-1439967963
