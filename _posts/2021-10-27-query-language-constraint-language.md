@@ -310,7 +310,7 @@ There already are modern systems for applying constraints or validation checks t
 
 [dq]: https://github.com/awslabs/deequ
 [ge]: https://greatexpectations.io
-[ge-api]: https://docs.greatexpectations.io/docs/guides/expectations/contributing/how_to_contribute_a_new_expectation_to_great_expectations/#1-choose-a-parent-class-to-help-your-implementation
+[ge-api]: https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_custom_expectation_class
 [dq-efficient]: https://github.com/awslabs/deequ/blob/d243a7c592e30d0422c97988d1c5313c47c0eee0/src/main/scala/com/amazon/deequ/analyzers/Analyzer.scala
 
 Other projects that are already based on building graphs of declarative queries -- like [dbt][dbt], [Materialize][mz], [ksqlDB][ksqldb], and [Delta Live Tables][dlt] -- could likewise take advantage of the idea laid out in this post. Some of these projects already allow users to define row-level constraints on a dataset, analogous to the typical [SQL `CHECK` constraint][sql-check]. But what if you could declare the whole dataset itself to be a constraint? Whenever an update to the pipeline triggers a refresh of the dataset, the constraint is rechecked.

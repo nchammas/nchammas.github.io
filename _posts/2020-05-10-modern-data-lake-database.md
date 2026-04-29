@@ -97,7 +97,7 @@ Apache Spark is extremely popular with teams building data lakes. If you're read
 Spark comes with a command-line utility called `spark-sql`. It's similar, for example, to Postgres's `psql`. It gives you a SQL-only prompt where you can create, destroy, and query tables in a virtual database. By default, the catalog for this database is stored in a folder called `metastore_db`, and the data for the tables in the database is stored in a folder called `spark-warehouse`, typically in Parquet format. That's already pretty neat, but you can take this further by calling `./sbin/start-thriftserver.sh` from the Spark home directory. This will start up a JDBC server that you can connect to with any old database client, like [DBeaver]. That will give you the full "Spark is a database" experience. I won't go over how to do this in detail, since that's not the focus of this post, but the documentation for Spark's JDBC server and SQL CLI [is here].
 
 [DBeaver]: https://dbeaver.io
-[is here]: http://spark.apache.org/docs/2.4.5/sql-distributed-sql-engine.html
+[is here]: https://spark.apache.org/docs/4.1.1/sql-distributed-sql-engine.html
 
 We can extend this experience to the cloud. If you work with Spark on Amazon EMR, you can [connect Spark to the AWS Glue Data Catalog]. This gives Spark the same view into your datasets that several other AWS services have, including Amazon Athena and Amazon Redshift Spectrum. In other words, you can have one catalog, managed by AWS Glue, one location for your data, on S3, and any number of different services or query engines updating or querying that data using SQL. And just as you can with Spark running locally, on EMR you can [start a JDBC server] and connect to it with a regular database client.
 
