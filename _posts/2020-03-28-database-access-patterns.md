@@ -43,14 +43,15 @@ Examples of transactional databases include all the popular database systems you
 
 <div style="text-align: center;">
 <figure>
-    <a href="http://www.warfaremagazine.co.uk/articles/1415-The-Battle-of-Agincourt/171">
-        <img
-            src="/assets/images/battle-of-agincourt-compressed.jpg"
-            width="300"
-        />
-    </a>
+    <span>
+    <img
+        src="/assets/images/battle-of-agincourt-compressed.jpg"
+        width="300"
+    />
+    </span>
     <figcaption>
-        The transactional database access pattern: Lots and lots of tiny chunks of data coming at you real fast.
+    The transactional database access pattern: Lots and lots of tiny chunks of data coming at you real fast.
+    (<a href="https://www.pen-and-sword.co.uk/100-Years-War-Agincourt-1415-DVD/p/3757">source</a>)
     </figcaption>
 </figure>
 </div>
@@ -75,14 +76,15 @@ Popular analytical database systems include:
 
 <div style="text-align: center;">
 <figure>
-    <a href="https://en.wikipedia.org/wiki/Trebuchet">
+    <span>
         <img
             src="/assets/images/trebuchet-castelnaud-compressed.jpg"
             width="400"
         />
-    </a>
+    </span>
     <figcaption>
-        The analytical database access pattern: A handful of huge chunks of data coming at you relatively slowly.
+    The analytical database access pattern: A handful of huge chunks of data coming at you relatively slowly.
+    (<a href="https://commons.wikimedia.org/wiki/File:Trebuchet_Castelnaud.jpg">source</a>)
     </figcaption>
 </figure>
 </div>
@@ -110,7 +112,7 @@ There are many more ways to understand and categorize database systems:
 * by the [query languages] and [data structures] they support;
 * or by how they [lay out data on disk], to name a few.
 
-[consistency guarantees]: https://fauna.com/blog/demystifying-database-systems-introduction-to-consistency-levels
+[consistency guarantees]: https://web.archive.org/web/20201130112633/https://fauna.com/blog/demystifying-database-systems-introduction-to-consistency-levels
 [transaction isolation]: http://martin.kleppmann.com/2014/11/25/hermitage-testing-the-i-in-acid.html
 [scale]: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-scale-introduction#horizontal-and-vertical-scaling
 [query languages]: https://neo4j.com/blog/why-database-query-language-matters/#cypher

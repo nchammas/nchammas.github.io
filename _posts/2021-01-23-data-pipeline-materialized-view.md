@@ -176,15 +176,16 @@ Two relatively new projects express aspects of this vision in clear but differen
 
 ### dbt: Pipelines as Batch-Updated SQL Queries
 
-The core of [dbt] is an engine for building [a graph of SQL queries](https://docs.getdbt.com/docs/introduction#what-makes-dbt-so-powerful). Parts of any given query can be generated dynamically using a templating language ([Jinja]), and queries can reference other queries.
+The core of [dbt] is an engine for building [a graph of SQL queries]. Parts of any given query can be generated dynamically using a templating language ([Jinja]), and queries can reference other queries.
 
+[a graph of SQL queries]: https://web.archive.org/web/20210616194925/https://docs.getdbt.com/docs/introduction/#what-makes-dbt-so-powerful
 [Jinja]: https://docs.getdbt.com/tutorial/using-jinja/
 
 Every query has a configured materialization strategy, which defines whether the results of the query are generated ahead of time, and if so, how they are stored and updated.
 
 If the results are materialized, they can be updated with a full refresh or [incrementally], though there are some restrictions on what kinds of updates can be done incrementally. Updates are typically triggered on a schedule.
 
-[incrementally]: https://docs.getdbt.com/docs/building-a-dbt-project/building-models/configuring-incremental-models/#understanding-incremental-models
+[incrementally]: https://docs.getdbt.com/docs/build/incremental-models
 
 ### Materialize: Pipelines as Live-Updated Materialized Views
 

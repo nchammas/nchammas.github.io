@@ -64,7 +64,7 @@ There are many problems that fit this "transitions-first" pattern, as well as pr
 [Terraform] is a tool for managing infrastructure that uses declarative configuration files to describe the infrastructure under its control. For example, here is a [simple configuration] that describes a single EC2 instance running on AWS:
 
 [Terraform]: https://www.terraform.io
-[simple configuration]: https://learn.hashicorp.com/terraform/getting-started/build#configuration
+[simple configuration]: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-create#configuration-blocks
 
 ```terraform
 provider "aws" {
