@@ -1,0 +1,12 @@
+---
+# This empty front matter is required for Jekyll to process this file.
+---
+
+@import "minima";
+
+// Rouge tags `import`/`from` keywords (e.g. in Python) as Keyword.Namespace (.kn),
+// but Minima 2.5 doesn't include a rule for it. Add it here to match the base .k rule.
+// See: https://github.com/jekyll/minima/pull/925
+.highlight {
+  .kn { font-weight: bold } // Keyword.Namespace
+}

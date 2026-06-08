@@ -826,7 +826,9 @@ As for the design of the language itself, you may find it good or bad. That's no
 [^point]: That being said, if you've worked on a similar problem and would like to share your experience, please reach out! My contact information is in the site footer.
 [^light]: My original work on this generated some excitement but was ultimately rejected by the business, which wasn't surprising. They hadn't asked for a new query language, and they had other fish to fry. Such is the fate of most work-related passion projects.
 
-In a future post I will walk through how to implement a portion of this new query language so we have a working prototype!
+[In the next post][next] I will walk through how to implement a portion of this new query language so we have a working prototype!
+
+[next]: {% post_url 2026-06-08-custom-query-language-implementation %}
 
 _Thanks to Ciprian and [Eddie] for reading a draft of this post._
 
